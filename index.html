@@ -14,8 +14,8 @@
         <ul>
             <li><img id="dragon_logo" src="./img/logo_dragao.png"></li>
             <li><button id="tatuador">Sou Tatuador</button></li>
-            <li><button id="supply">Sou Supply</button></li>
-            <li><button id="cliente">Sou Cliente</button></li>
+            <li><button id="supply" onclick="sou_supply()">Sou Supply</button></li>
+            <li><button id="cliente" onclick=" sou_cliente()">Sou Cliente</button></li>
             <div id="links">
                 <li><a href="#busines">Bussines</a></li>
                 <li><a href="#blog">Blog</a></li>
@@ -40,7 +40,7 @@
         <input class="cadastro_normal" type="number" placeholder="telefone">
         <input class="cadastro_normal" type="password" placeholder="senha" required>
         <input class="cadastro_normal" type="password" placeholder="confime sua senha " required>
-        <input class="cadastro_normal" type="number" placeholder="MEI (se possuir)">
+        <input id="identificador" class="cadastro_normal" type="number" placeholder="MEI (se possuir)">
         <button type="submit">cadastre-se</button>
 
     </form>
