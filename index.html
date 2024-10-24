@@ -1,18 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blood Dragon</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div id="container-imagem"></div>
-   
-   
-   
-   
-   
-   
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Dragon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="tinta.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><img id="dragon_logo" src="./img/logo_dragao.png"></li>
+            <li><button id="tatuador">Sou Tatuador</button></li>
+            <li><button id="supply">Sou Supply</button></li>
+            <li><button id="cliente">Sou Cliente</button></li>
+            <div id="links">
+                <li><a href="#busines">Bussines</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div id="formularios">
+    <form id="loguin">
+        <input class="loguin_normal" type="text" placeholder="Email">
+        <input class="loguin_normal" type="password" placeholder="Senha">
+        <a href="#">esqueceu a senha?</a>
+        <div id="loguins_externos">
+            <input type="image" src="./img/facebook.png">
+            <input type="image" src="./img/google.png">
+        </div>
+        <button type="submit">Loguin</button>
+    </form>
+    <form id="cadastro">
+        <input class="cadastro_normal" type="text" placeholder="Nome" required>
+        <input class="cadastro_normal" type="email" placeholder="Email" required>
+        <input class="cadastro_normal" type="number" placeholder="telefone">
+        <input class="cadastro_normal" type="password" placeholder="senha" required>
+        <input class="cadastro_normal" type="password" placeholder="confime sua senha " required>
+        <input class="cadastro_normal" type="number" placeholder="MEI (se possuir)">
+        <button type="submit">cadastre-se</button>
+
+    </form>
+</div>
+
+
+
+
+
+</body>
+
 </html>
