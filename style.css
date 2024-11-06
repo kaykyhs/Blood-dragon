@@ -26,7 +26,7 @@ nav{
     padding: 30px;
 }
 
-nav button{
+.perfil{
     margin-top: 15px;
     background-color:#7556568F;
     color: white;
@@ -42,6 +42,10 @@ nav button:hover{
     background-color: white;
     color: black;
     font-weight: bold;
+}
+#tatuador{
+    background-color: black;
+     color: white;
 }
 nav ul{
     display: flex;

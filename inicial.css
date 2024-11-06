@@ -1,0 +1,127 @@
+body{
+    display: block;
+    background-image: linear-gradient(to top, black ,red);
+    
+}
+nav{
+    float:inline-start;
+    height: 850px;
+    width: 60px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    background-color: red;
+}
+nav li{
+    list-style: none;
+}
+nav img{
+    padding-bottom: 30px;
+    margin-left: -30px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+nav img:hover{
+    border-radius: 10px;
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+header{
+    float:top;
+    height: 100px;
+    position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+header input{
+    width: 400px;
+    padding: 10px;
+    border: none;
+    float: top;
+    border-radius: 20px;
+}
+header img{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+#lupa{
+    margin-left: -40px;
+}
+#lupa:hover{
+    cursor: pointer;
+}
+#notificaçao{
+    width: 30px;
+    height: 30px;
+    justify-content:flex-end;
+}
+#Nmensagens{
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    margin-left: -10px;
+    margin-top: -40px;
+    border-radius: 40px;
+    background-color:green;
+    text-align: center;
+}
+#Nmensagens p{
+    margin-top:0px;
+}
+#status{
+    margin-top: 10px;
+    height: 100px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    
+}
+#status ul {
+    display: flex;
+    list-style-type: none;
+}
+#status li{
+    padding: 15px;
+    justify-content: center;
+    align-items: baseline;
+}
+#status img{
+    width: 80px;
+    height: 80px;
+}
+#carrossel{
+    width: 800px;
+    height: 300px;
+    border-radius: 50px;
+    background-image: url(./img/tatto_banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 400px;
+}
+#prox{
+    justify-content: flex-end;
+    height: 290px;
+    width: 100px;
+    margin-left: 740px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    opacity: 50%;
+}
+#ant{
+    opacity: 50%;
+    justify-content: flex-start;
+    height: 290px;
+    width: 100px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+

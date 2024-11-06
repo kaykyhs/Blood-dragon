@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="inicial.css">
+    <script src="inicial.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="PagiInic.html"><img src="./img/inicial.png"></a></li>
+            <li><a href="Pesquisa.html"><img src="./img/pesquisar.png"></a></li>
+            <li><a href="Ideias.html"><img src="./img/ideias.png"></a></li>
+            <li><a href="calendario.html"><img src="./img/calendario.png"></a></li>
+            <li><a href="Perfil.html"><img src="./img/perfil.png"></a></li>
+        </ul>
+    </nav>
+    <header>
+        <input type="text" id="pesquisa" placeholder="Pesquisar... ">
+        <img id="lupa" src="./img/pesquisar.png" id="lupa" onclick="pesquisar()">
+        <img id="notificaçao" src="./img/notificaçao.png" id="calendario" onclick="notificaçoes()">
+        <img id="chat" src="./img/enviar.png" id="sair" onclick="mensagens()">
+        <div id="Nmensagens"><p>1</p></div>
+    </header>
+    <div id="status">
+        <ul>
+            <li>
+                <img src="./img/image.png">
+                <p>tatuador(1)</p>
+            </li>
+
+            <li>
+                <img src="./img/image (1).png">
+                <p>tatuador(2)</p>
+            </li>
+                
+            <li>
+                <img src="./img/image (2).png">
+                <p>tatuador(3)</p>
+            </li>  
+            <li>
+                <img src="./img/image (3).png">
+                <p>tatuador(4)</p>
+            </li>
+            <li>
+                <img src="./img/image (4).png">
+                <p>tatuador(5)</p>
+            </li>
+            <li>
+                <img src="./img/image (5).png">
+                <p>tatuador(6)</p>
+            </li>
+        </ul>
+    </div>
+    <div id="carrossel">
+        <button id="ant" onclick="anterior()"><</button>
+        <a href="Noticia1.html"></a>
+        <button id="prox" onclick="proximo()">></button>
+    </div>
+</body>
+
+</html>
