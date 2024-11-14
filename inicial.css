@@ -1,11 +1,10 @@
 body{
-    display: block;
     background-image: linear-gradient(to top, black ,red);
-    
+    height:1184px;
 }
 nav{
     float:inline-start;
-    height: 850px;
+    height: 100%;
     width: 60px;
     padding: 0;
     margin: 0;
@@ -124,4 +123,39 @@ header img{
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
+
+/*ideias*/
+#scrl{
+    margin: 5% 15%;
+    display: flex;
+    flex-wrap:wrap;
+    overflow: scroll;
+    width: 70%;
+    height: 80%;
+    background: linear-gradient(red 0%,black 150%);
+    border: solid 5px rgb(138, 138, 138);
+    border-radius: 15px;
+ }
+ #scrl .posts{
+    width: 300px;
+    height: 400px;
+    align-items: center;
+    margin: 2%;
+    flex-basis: 300px;
+    background-color: rgba(0, 0, 0, 0.087);
+    border-radius: 15px;
+    border: 2 solid black;
+ }
+ #scrl .posts img{
+    width: 90%;
+    margin: 5%;
+    align-items: center;
+ }
+ .posts .perfil{
+    height: 30px;
+    width: 30px;
+ }
+ .perfil img{
+    
+ }
 
