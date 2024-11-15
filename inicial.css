@@ -1,9 +1,14 @@
-body{
-    background-image: linear-gradient(to top, black ,red);
-    height:1184px;
+body {
+    background-image: linear-gradient(to top, black, red);
+    height: auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
 }
-nav{
-    float:inline-start;
+
+aside {
+    float: inline-start;
+    position: fixed;
     height: 100%;
     width: 60px;
     padding: 0;
@@ -11,23 +16,27 @@ nav{
     display: block;
     background-color: red;
 }
-nav li{
+
+aside li {
     list-style: none;
 }
-nav img{
+
+aside img {
     padding-bottom: 30px;
     margin-left: -30px;
     width: 40px;
     height: 40px;
     display: block;
 }
-nav img:hover{
+
+aside img:hover {
     border-radius: 10px;
     transform: scale(1.2);
     transition: transform 0.5s;
 }
-header{
-    float:top;
+
+header {
+    float: top;
     height: 100px;
     position: top;
     display: flex;
@@ -36,126 +45,325 @@ header{
     color: white;
     font-size: 30px;
 }
-header input{
+
+header input {
     width: 400px;
     padding: 10px;
     border: none;
     float: top;
     border-radius: 20px;
 }
-header img{
+
+header img {
     width: 40px;
     height: 40px;
     margin-left: 20px;
 }
-#lupa{
+
+#lupa {
     margin-left: -40px;
 }
-#lupa:hover{
+
+#lupa:hover {
     cursor: pointer;
 }
-#notificaçao{
+
+#notificaçao {
     width: 30px;
     height: 30px;
-    justify-content:flex-end;
+    justify-content: flex-end;
 }
-#Nmensagens{
+
+#Nmensagens {
     height: 20px;
     width: 20px;
     font-size: 20px;
     margin-left: -10px;
     margin-top: -40px;
     border-radius: 40px;
-    background-color:green;
+    background-color: green;
     text-align: center;
 }
-#Nmensagens p{
-    margin-top:0px;
+
+#Nmensagens p {
+    margin-top: 0px;
 }
-#status{
+
+#status {
+    margin-right: 40px;
     margin-top: 10px;
     height: 100px;
-    display: flex;  
+    display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
+
 #status ul {
     display: flex;
     list-style-type: none;
 }
-#status li{
+
+#status li {
     padding: 15px;
     justify-content: center;
     align-items: baseline;
 }
-#status img{
+
+#status img {
     width: 80px;
     height: 80px;
 }
-#carrossel{
-    width: 800px;
+
+.carrossel {
+    margin: 0;
+    padding: 0;
+    display: flex;
     height: 300px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.carrossel li {
+    list-style: none;
+    position: absolute;
+}
+
+.carrossel img {
+    margin: auto;
+    height: 400px;
+    width: 600px;
+    vertical-align: top;
+    border-radius: 40px;
+}
+
+.carrossel input {
+    display: none;
+
+
+}
+
+.carrossel label {
+    border-radius: 10px;
+    background-color: white;
+    bottom: -15px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    margin-left: 250px;
+    width: 10px;
+    z-index: 10;
+}
+
+.carrossel li:nth-child(1) label {
+    left: 10px;
+}
+
+.carrossel li:nth-child(2) label {
+    left: 40px;
+}
+
+.carrossel li:nth-child(3) label {
+    left: 70px;
+}
+
+.carrossel img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.carrossel li input:checked~img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.post {
+    width: 600px;
+    height: 800px;
+    background-color: black;
+    color: white;
+    margin-left: 500px;
+    margin-top: 150px;
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+.perfil_post {
+    border-radius: 300px;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+}
+
+.informativo {
+    display: flex;
+}
+
+.conteudo {
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    margin: 20px;
+}
+
+.conteudo img {
+    width: auto;
+    height: 500px;
+    margin-left: 140px;
+}
+
+.interaçoes {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.comentar {
+    display: flex;
+    margin-left: 10px;
+}
+
+.comentar img {
+    height: 30px;
+}
+
+.curtir {
+    display: flex;
+}
+
+.curtir img {
+    height: 40px;
+}
+
+.entrada {
+    color: white;
+    font-size: 50px;
+    float: inline-end;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
     border-radius: 50px;
-    background-image: url(./img/tatto_banner1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+.entrada button {
+    border: none;
+    height: 60px;
+    width: 60px;
+    background-color: pink;
+    color: white;
+    font-size: 50px;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.notifica {
+    
+    display: none;
+    float: inline-start;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 50px;
+    top: 20px;
+    height: 400px;
+    width: 300px;
+    background: linear-gradient(180deg, #AD0CAF 0%, #8F0606 63.91%);
+    color: white;
+
+}
+
+.notifica header {
+    text-align: center;
+    background: #5A0505;
+    height: 60px;
+    width: 100%;
+}
+
+.notifica header img {
+    margin-left: -40px;
+
+}
+
+.dia_notificado {
+    margin-left:100px ;
+    border-bottom: 1px solid black;
+    height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    position: center;
+    justify-content: center;
+    width: 100px;
+    border-radius: 30px;
+    background-color: #8F0606;
+}
+
+.dia_notificado p {
+    margin: 10px;
+}
+.notificaçao{
+    display: flex;
+    background-color: #5A0505;
+    border-radius: 40px;
+    width: 270px;
     justify-content: center;
     align-items: center;
-    display: flex;
-    margin-top: 20px;
-    margin-left: 400px;
+    height: 60px;
+    padding: 5px;
+    margin: 10px;  
 }
-#prox{
-    justify-content: flex-end;
-    height: 290px;
-    width: 100px;
-    margin-left: 740px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    opacity: 50%;
-}
-#ant{
-    opacity: 50%;
-    justify-content: flex-start;
-    height: 290px;
-    width: 100px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-
-/*ideias*/
-#scrl{
-    margin: 5% 15%;
-    display: flex;
-    flex-wrap:wrap;
-    overflow: scroll;
-    width: 70%;
-    height: 80%;
-    background: linear-gradient(red 0%,black 150%);
-    border: solid 5px rgb(138, 138, 138);
-    border-radius: 15px;
- }
- #scrl .posts{
-    width: 300px;
-    height: 400px;
-    align-items: center;
-    margin: 2%;
-    flex-basis: 300px;
-    background-color: rgba(0, 0, 0, 0.087);
-    border-radius: 15px;
-    border: 2 solid black;
- }
- #scrl .posts img{
-    width: 90%;
-    margin: 5%;
-    align-items: center;
- }
- .posts .perfil{
-    height: 30px;
+.notificaçao img{
     width: 30px;
- }
- .perfil img{
-    
- }
-
+    height: 30px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: yellow;
+}
+.bate_papo{
+    display: none;
+    float: inline-start;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 50px;
+    top: 20px;
+    background-image: linear-gradient(to top, black, red);
+    height: 700px;
+    width: 440px;
+}
+.bate_papo header{
+    text-align: left;
+    background: #5A0505;
+    height: 60px;
+    width: 100%;
+}
+.bate_papo header img{
+    margin-left: -330px;
+}
+.chat{
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 370px;
+    margin: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 18px;
+}
+.chat img{
+    margin: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+.mensagem_lida{
+    opacity: 50%;
+    margin-top: 30px;
+}
