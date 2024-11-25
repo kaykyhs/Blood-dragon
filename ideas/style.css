@@ -1,0 +1,123 @@
+body {
+    background-image: linear-gradient(to top, black, red);
+    height: 1700px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+aside {
+    float: inline-start;
+    position: fixed;
+    height: 100%;
+    width: 60px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    background-color: red;
+}
+
+aside li {
+    list-style: none;
+}
+
+aside img {
+    padding-bottom: 30px;
+    margin-left: -30px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+aside img:hover {
+    border-radius: 10px;
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+header {
+    float: top;
+    height: 100px;
+    position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+header input {
+    width: 400px;
+    padding: 10px;
+    border: none;
+    float: top;
+    border-radius: 20px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+#lupa {
+    margin-left: -40px;
+}
+
+#lupa:hover {
+    cursor: pointer;
+}
+
+#notificaçao {
+    width: 30px;
+    height: 30px;
+    justify-content: flex-end;
+}
+
+#Nmensagens {
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    margin-left: -10px;
+    margin-top: -40px;
+    border-radius: 40px;
+    background-color: green;
+    text-align: center;
+}
+
+#Nmensagens p {
+    margin-top: 0px;
+}
+
+/*ideias*/
+#scrl{
+    margin: 5% 15%;
+    display: flex;
+    flex-wrap:wrap;
+    overflow: scroll;
+    width: 70%;
+    height: 80%;
+    background: linear-gradient(red 0%,black 150%);
+    border: solid 5px rgb(138, 138, 138);
+    border-radius: 15px;
+ }
+ #scrl .posts{
+    width: 300px;
+    height: 400px;
+    align-items: center;
+    margin: 2%;
+    flex-basis: 300px;
+    background-color: rgba(0, 0, 0, 0.087);
+    border-radius: 15px;
+    border: 2 solid black;
+ }
+ #scrl .posts img{
+    width: 90%;
+    margin: 5%;
+    align-items: center;
+ }
+ .posts .perfil{
+    height: 30px;
+    width: 30px;
+ }
+ .perfil img{
+    
+ }
