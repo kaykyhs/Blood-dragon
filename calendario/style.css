@@ -1,0 +1,60 @@
+body {
+    background-image: linear-gradient(to top, black, red);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#box {
+    border-radius: 60px;
+    background: #ffffff;
+    width: 1900px;
+    height: 1000px;
+    padding: 25px;
+}
+.calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+.calendario .header {
+    font-style: Arial;
+    font-size: 35px;
+    background-color: #b8b8b8;
+    color: white;
+    font-weight: bold;
+    padding: 1px;
+}
+.calendario .dia {
+    border: 1px solid #000000;
+    height: 170px;
+    padding-left: 30px;
+}
+.calendario .vazio {
+    background-color: #ebebeb;
+    border: 1px solid #000000;
+}
+
+.dia button {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    margin-right: 100%;
+    font-size: 35px;
+}
+
+img {
+    margin-bottom: 1050px;
+    margin-left: 20px;
+    height: 70px;
+}
+
+h1 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 55px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
