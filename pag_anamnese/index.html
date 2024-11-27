@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de anamnese</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <aside>
+        <ul>
+            <li><a href="PagiInic.html"><img src="/icons_navbar/inicial.png"></a></li>
+            <li><a href="Pesquisa.html"><img src="/icons_navbar/pesquisar.png"></a></li>
+            <li><a href="Ideias.html"><img src="/icons_navbar/ideias.png"></a></li>
+            <li><a href="calendario.html"><img src="/icons_navbar/calendario.png"></a></li>
+            <li><a href="Perfil.html"><img src="/icons_navbar/perfil.png"></a></li>
+        </ul>
+    </aside>
+ 
+    <div class="foto_login">
+        <img src="/icons_navbar/perfil.png" alt="">
+        <button>Sair</button>
+        <button>Editar</button>
+    </div>
+    <div class="conteudo_list">
+        <div class="list_anamnese">
+            <h1>Lista de anamnese</h1>
+            <div>  
+                <input type="text" id="nome" placeholder="Nome">
+            </div>
+            <div>
+                <input type="tel" id="telefone" placeholder="Telefone">
+            </div>
+            <div>
+                <input type="number" id="idade" placeholder="Idade">
+            </div>
+        </div>
+        <div id="est_interesse">
+            <h2>Estilos de interesse(escolha no minímo 3):</h2>
+            <div class='est_buton'>
+                <button>OLD SCHOOL</button>
+                <button>PONTILISMO</button>
+                <button>BLACK-WORK</button>
+                <button>GEOMETRICO</button>
+                <button>MINIMALISTA</button>
+                <button>SINGLE LINE</button>
+                <button>ANIMES</button>
+                <button>FLORAL</button>
+                <button>REALISMO</button>
+                <button>MAORI</button>
+                <button>GLITCH</button>
+                <button>ORIENTAL</button>
+                <button>GAMES</button>
+                <button>COBERTURAS</button>
+            </div>
+        </div>
+
+        <div id="antece_sistemicos">
+            <h2>Antecedentes Sistêmicos:</h2>
+            <div class="antece_buton">
+                <button>HEPATITE</button>
+                <button>DOENÇAS INFECCIOSAS(HERPES/HIV)</button>
+                <button>HIPOTENSÃO</button>
+                <button>HIPERTENSÃO</button>
+                <button>CIRCULATORIOS(ANEMIA)</button>
+                <button>CARDIOLOGICOS</button>
+                <button>OBESIDADE</button>
+                <button>DIABETES</button>
+                <button>HIPOTIROIDISMO</button>
+                <button>HIPERTIROIDISMO</button>
+                <button>GLAUCOMA</button>
+                <button>ALERGIA</button>
+                <button>DERMATOLOGICO</button>
+                <button>PSICOLÓGICOS</button>
+            </div>
+        </div>
+    <section class="form_observacao">
+        <h3>Obs:</h3>
+            <form>
+                <textarea id="mensagem" cols="58" rows="10" placeholder="Observações..."></textarea>
+                <button onclick="alertForm()" type="submit">Enviar</button>
+            </form>
+    </section>
+  
+</div>
+<div class="notificacao_img">
+    <img src="/icons_navbar/img_notfi.png" alt="">
+    <p id="clickCount">0</p>
+</div>
+</body>
+</html>

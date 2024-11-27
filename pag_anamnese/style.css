@@ -1,0 +1,138 @@
+body{
+    display:flex;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(red,black);
+    color: white;
+}
+.list_anamnese input{
+    height: 20px;
+    width: 400px;
+    margin: 2px; 
+}
+.conteudo_list{
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 60px;
+    background-color: black;
+    padding: 65px;
+    width: 450px;
+    height: 800px;
+}
+#est_interesse{
+    text-align: justify;
+}
+.est_buton button{
+    border-radius: 20px; 
+    margin: 3px;
+    padding: 4px;
+}
+.est_buton button:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+#antece_sistemicos{
+    text-align: justify;
+}
+#antece_sistemicos p{
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 10px;
+    width: 210px;
+    block-size: 20px;
+    background-color: silver;
+    color: black;   
+}
+.antece_buton button{
+    border-radius: 20px;
+    margin: 3px;
+    padding: 4px;
+}
+.antece_buton button:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.form_observacao{
+    text-align: justify;
+}
+.form_observacao button{
+    cursor: pointer;
+    width: 100px;
+    font-weight: bold;
+    font-size: 15px; 
+}
+.foto_login{
+    display:block;
+    align-items: center;
+    width: 120px;
+    margin: 0 15%;
+}
+.foto_login button{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 7px;
+    border: 1px solid rgb(160, 160, 160);
+    transition: 0.1s;
+    font-weight: bold;
+    font-size: 15px; 
+}
+.foto_login button:hover{
+    background:linear-gradient(black,white);
+    color: white;
+    width: 101px;
+    height: 32px;
+    transition: 0.1s;
+}
+.foto_login img{
+    width: 120px;
+    height: 120px;  
+}
+.notificacao_img {
+    display: flex;
+    justify-content: end;
+    margin-right: 50px; 
+    margin-left: 600px;
+}
+.notificacao_img img{
+    position: absolute;
+    top: 0px;
+    width: 35px;
+    height:35px;
+}
+.notificacao_img p{
+    position: absolute;
+    top: 22px;
+    margin:2px;
+}
+aside {
+    float: inline-start;
+    position: fixed;
+    height: 100%;
+    width: 60px;
+    padding: 0;
+    margin: 0;
+    display: block;
+    background-color: red;
+}
+aside li {
+    list-style: none;
+}
+aside img {
+    padding-bottom: 30px;
+    margin-left: -30px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+aside img:hover {
+    border-radius: 10px;
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
