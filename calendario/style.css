@@ -7,11 +7,19 @@ body {
     margin: 0;
 }
 
+#bigday {
+    height: 32px;
+    width: 32px;
+    background-color: #ec2727;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 #box {
     border-radius: 60px;
     background: #ffffff;
-    width: 1900px;
-    height: 1000px;
+    width: 60%;
+    height: 60%;
     padding: 25px;
 }
 .calendario {
@@ -21,7 +29,7 @@ body {
 }
 .calendario .header {
     font-style: Arial;
-    font-size: 35px;
+    font-size: 30px;
     background-color: #b8b8b8;
     color: white;
     font-weight: bold;
@@ -29,7 +37,7 @@ body {
 }
 .calendario .dia {
     border: 1px solid #000000;
-    height: 170px;
+    height: 90px;
     padding-left: 30px;
 }
 .calendario .vazio {
@@ -43,18 +51,18 @@ body {
     border: none;
     cursor: pointer;
     margin-right: 100%;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 img {
-    margin-bottom: 1050px;
-    margin-left: 20px;
-    height: 70px;
+    margin-bottom: 700px;
+    margin-left: 25px;
+    height: 35px;
 }
 
 h1 {
     font-family:'Courier New', Courier, monospace;
-    font-size: 55px;
+    font-size: 45px;
     margin-bottom: 5px;
     margin-top: 5px;
 }
