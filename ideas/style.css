@@ -91,6 +91,7 @@ header img {
 #scrl{
     margin: 5% 15%;
     display: flex;
+    align-items:flex-start;
     flex-wrap:wrap;
     overflow: scroll;
     width: 70%;
@@ -100,24 +101,28 @@ header img {
     border-radius: 15px;
  }
  #scrl .posts{
-    width: 300px;
-    height: 400px;
-    align-items: center;
+    height: 70mm;
+    width: 70mm;
     margin: 2%;
-    flex-basis: 300px;
     background-color: rgba(0, 0, 0, 0.087);
     border-radius: 15px;
-    border: 2 solid black;
+    border: 2px solid black;
  }
- #scrl .posts img{
-    width: 90%;
-    margin: 5%;
+ #scrl .posts .imagen{
+    width: 100%;
+    height: 100%;
     align-items: center;
+    border-radius: 15px;
  }
  .posts .perfil{
-    height: 30px;
-    width: 30px;
+    height: 10mm;
+    width: 10mm;
+    display:flex;
+    margin-top: -40px;
+    filter: drop-shadow( 0 0 10px white);
  }
- .perfil img{
-    
+ .posts p{
+    text-shadow: 0 0 10px white;
+    margin-top: -25px;
+    margin-left: 45px;
  }
