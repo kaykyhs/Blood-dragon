@@ -1,11 +1,19 @@
 body {
     background-image: linear-gradient(to top, black, red);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
+    height: 1440px;
+    display:grid;
 }
+body::-webkit-scrollbar {
+    background-color: rgb(122, 0, 0);
+    box-shadow: inset 0 0 7px black;
+    width: 10px;
+    height: 0px;
+ }
+ body::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: rgba(37, 14, 14, 0.575);
+    box-shadow: inset 0 0 8px black;
+ }
 
 #bigday {
     height: 32px;
@@ -18,27 +26,26 @@ body {
 #box {
     border-radius: 60px;
     background: #ffffff;
-    width: 60%;
-    height: 60%;
-    padding: 25px;
+    width: 80%;
+    height: 720px;
+    margin-left: 13%;
+    margin-top: 1%;
 }
 .calendario {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    text-align: center;
+    margin: 5%;
+    height: 70%;
 }
 .calendario .header {
     font-style: Arial;
-    font-size: 30px;
+    font-size: 160%;
     background-color: #b8b8b8;
     color: white;
     font-weight: bold;
-    padding: 1px;
 }
 .calendario .dia {
     border: 1px solid #000000;
-    height: 90px;
-    padding-left: 30px;
 }
 .calendario .vazio {
     background-color: #ebebeb;
@@ -46,23 +53,101 @@ body {
 }
 
 .dia button {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     border: none;
     cursor: pointer;
     margin-right: 100%;
-    font-size: 30px;
-}
-
-img {
-    margin-bottom: 700px;
-    margin-left: 25px;
-    height: 35px;
+    font-size: 170%;
 }
 
 h1 {
     font-family:'Courier New', Courier, monospace;
-    font-size: 45px;
+    font-size: 230%;
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-left: 20mm;
+}
+
+/*navbar*/
+aside {
+    float: inline-start;
+    position: fixed;
+    height: 100%;
+    width: 60px;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: rgba(255, 0, 0, 0.274);
+    border-radius: 8px;
+}
+
+aside li {
+    list-style: none;
+}
+
+aside img {
+    padding-bottom: 30px;
+    margin-left: -30px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+aside img:hover {
+    border-radius: 10px;
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+header {
+    float: top;
+    height: 100px;
+    position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+header input {
+    width: 400px;
+    padding: 10px;
+    border: none;
+    float: top;
+    border-radius: 20px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+#lupa {
+    margin-left: -40px;
+}
+
+#lupa:hover {
+    cursor: pointer;
+}
+
+#notificaçao {
+    width: 30px;
+    height: 30px;
+    justify-content: flex-end;
+}
+
+#Nmensagens {
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    margin-left: -10px;
+    margin-top: -40px;
+    border-radius: 40px;
+    background-color: green;
+    text-align: center;
+}
+
+#Nmensagens p {
+    margin-top: 0px;
 }
