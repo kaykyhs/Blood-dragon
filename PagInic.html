@@ -12,7 +12,7 @@
 <body>
     <aside>
         <ul>
-            <li><a href="PagiInic.html"><img src="./img/inicial.png"></a></li>
+            <li><a href="PagInic.html"><img src="./img/inicial.png"></a></li>
             <li><a href="Pesquisa.html"><img src="./img/pesquisar.png"></a></li>
             <li><a href="Ideias.html"><img src="./img/ideias.png"></a></li>
             <li><a href="calendario.html"><img src="./img/calendario.png"></a></li>
@@ -22,45 +22,67 @@
     <header>
         <input type="text" id="pesquisa" placeholder="Pesquisar... ">
         <img id="lupa" src="./img/pesquisar.png" id="lupa" onclick="pesquisar()">
-        <img id="notificaçao" src="./img/notificaçao.png" id="calendario" onclick="notificaçoes()">
+        <img id="notificacao" src="./img/notificaçao.png" id="calendario" onclick="ativa_notifica()">
         <div id="Nmensagens">
             <p>1</p>
+
         </div>
         <img id="chat" src="./img/enviar.png" id="sair" onclick="mensagens()">
         <div id="Nmensagens">
             <p>1</p>
         </div>
     </header>
-    <div class="notifica">
+    <div id="notifica">
         <header>
-            <img src="/img/voltar_colorido.png" alt="botao_volta">
+            <img src="/img/voltar_colorido.png" alt="botao_volta" onclick=" fecha_notifica()">
             <span>Minhas notificaçoes</span>
         </header>
         <div class="dia_notificado">
             <p>Hoje</p>
         </div>
-        <div class="notificaçao">
+        <div class="notificacao">
             <img src="/img/alerta_agendamento.png" alt="imagem_alerta">
             <p>Agendamento para o dia 20/05/2021 realizado com sucessso</p>
 
         </div>
     </div>
-    <div class="bate_papo">
-        <header>
-            <img src="/img/voltar_colorido.png" alt="botao_volta">
-            <span>Chat</span>
-        </header>
-        <div class="chat">
-            <img src="/img/6-dicas-para-se-tornar-um-tatuador-de-sucesso.jpg" alt="imagem_alerta">
-            <p class="mensagem_nao_Lida">pode me passar mais detalher prf?</p>
+    <div id="side_papo">
+        <div id="bate_papo">
+            <header>
+                <img id="fechar" src="/img/voltar_colorido.png" onclick="fecha_papo()" alt="botao_volta">
+                <span>Chat</span>
+            </header>
+            <div class="chat" onclick="conversar()">
+                <img src="/img/6-dicas-para-se-tornar-um-tatuador-de-sucesso.jpg" alt="imagem_alerta">
+                <p class="mensagem_nao_Lida">pode me passar mais detalher prf?</p>
 
+            </div>
+            <div class="chat" onclick="conversar()">
+                <img src="/img/tatuador.jfif" alt="imagem_alerta">
+                <p class="mensagem_lida">Agendamento para o dia 20/05/2021 realizado com sucessso</p>
+
+            </div>
         </div>
-        <div class="chat">
-            <img src="/img/tatuador.jfif" alt="imagem_alerta">
-            <p class="mensagem_lida">Agendamento para o dia 20/05/2021 realizado com sucessso</p>
-
+        <div id="conversa">
+            <header>
+                <img id="fechar" src="/img/voltar_colorido.png" onclick="fecha_conversa()" alt="botao_volta">
+                <img class="conversante" src="./img/6-dicas-para-se-tornar-um-tatuador-de-sucesso.jpg">
+                <span> nome do conversante</span>
+            </header>
+            <div id="mensagens">
+                <div class="fala1">
+                    <p>isto e uma mensagem</p>
+                </div>
+                <div class="fala2">
+                    <p>isto e uma mensagem</p>
+                </div>
+            </div>
+            <footer>
+                <input type="text" placeholder="digite sua mensagem aki...">
+                <img id="anexo" src="./img/clip.png">
+                <img id="envia_mensagem" src="./img/enviar.png">
+            </footer>
         </div>
-
     </div>
     <div id="status">
         <ul>
@@ -134,9 +156,15 @@
             </div>
         </div>
     </div>
+    <div id="itens_arquivos">
+        <img src="./img/status.png">
+        <img src="./img/imagem.png">
+        <img src="./img/play.png">
+        <img src="./img/agulha.png">
+    </div>
     </div>
     <div class="entrada">
-        <button>+</button>
+        <button onclick="Gira_gira(this)" id="arquivos">+</button>
     </div>
 
 </body>

@@ -7,6 +7,7 @@ body {
 }
 
 aside {
+    z-index: 10;
     float: inline-start;
     position: fixed;
     height: 100%;
@@ -252,6 +253,10 @@ header img {
     width: 50px;
     text-align: center;
 }
+.entrada button.active{
+    transform: rotate(-180deg);
+    transition: transform 0.5s;
+}
 
 .entrada button {
     border: none;
@@ -262,33 +267,98 @@ header img {
     font-size: 50px;
     border-radius: 60px;
     cursor: pointer;
+    transform: rotate(180deg);
+    transition: transform 0.5s;
 }
+#itens_arquivos{
+    display: none;
+    background-color: black;
+    position:fixed;
+    right:37px;
+    bottom:50px;
+    height: 320px;
+    width: 65px;
+    border-radius: 40px;
+    animation-name: abri_arquivos;
+    animation-duration: 1.6s;
+    animation-fill-mode: forwards;
+}
+@keyframes abri_arquivos{
+    from{height: 0;}
+    to{ height: 200;}
+}
+#itens_arquivos img{
+    padding: 2px;
+    width: 60px;
+    height: 60px;
+    animation-name: abri_arquivos;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+}
+#itens_arquivos img:hover{
+    background-color: rgb(99, 2, 99);
+    border-radius: 30px;
+    
+}
+#side_papo{    
+    z-index: 1;
+    position: fixed;
+    width: 440px;
+    height: 100%;
+    animation-name: out_slide_papo;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide_papo {
+    from {right: -440px;}
+    to {right: 0px;}
+  }
+  @keyframes out_slide_papo {
+    from {right: 0px;}
+    to {right: -440px;}
+  }
 
-.notifica {
+#notifica{
     
     display: none;
     float: inline-start;
     align-items: center;
     justify-content: center;
     position: fixed;
-    right: 50px;
-    top: 20px;
-    height: 400px;
+    left: 70px;
+    top: 0px;
+    height: 100%;
     width: 300px;
     background: linear-gradient(180deg, #AD0CAF 0%, #8F0606 63.91%);
     color: white;
+    animation-name: slide_notifica;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
 
 }
+@keyframes slide_notifica {
+    from {left: -400px;}
+    to {top: 0px;}
+  }
+@keyframes out_slide_notifica {
+    from {left: 0px;}
+    to {left: -400px;}
+}
 
-.notifica header {
+#notifica.ativo{
+    display: block;
+}
+
+#notifica header {
     text-align: center;
     background: #5A0505;
     height: 60px;
     width: 100%;
 }
 
-.notifica header img {
-    margin-left: -40px;
+#notifica header img {
+    margin-left: 2px;
 
 }
 
@@ -308,7 +378,7 @@ header img {
 .dia_notificado p {
     margin: 10px;
 }
-.notificaçao{
+.notificacao{
     display: flex;
     background-color: #5A0505;
     border-radius: 40px;
@@ -319,32 +389,30 @@ header img {
     padding: 5px;
     margin: 10px;  
 }
-.notificaçao img{
+.notificacao img{
     width: 30px;
     height: 30px;
     margin: 5px;
     border-radius: 20px;
     background-color: yellow;
 }
-.bate_papo{
-    display: none;
+#bate_papo{
+
     float: inline-start;
     align-items: center;
     justify-content: center;
     position: fixed;
-    right: 50px;
-    top: 20px;
     background-image: linear-gradient(to top, black, red);
-    height: 700px;
+    height: 100%;
     width: 440px;
 }
-.bate_papo header{
+#bate_papo header{
     text-align: left;
     background: #5A0505;
     height: 60px;
     width: 100%;
 }
-.bate_papo header img{
+#bate_papo header img{
     margin-left: -330px;
 }
 .chat{
@@ -366,4 +434,78 @@ header img {
 .mensagem_lida{
     opacity: 50%;
     margin-top: 30px;
+}
+#conversa{
+    display: none;
+    background-image: linear-gradient(to top, black, red);
+    height: 100%;
+}
+#conversa header{
+    justify-content: left;
+    background: #5A0505;
+    width: 100%;
+}
+#fechar:hover{
+    background-color: black;
+}
+#conversa header img{
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+#mensagens{
+    height: 440px;
+    width: 100%;
+    display: table;
+}
+.fala1{
+    border-radius: 20px;
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    margin-left: 130px;
+    text-align: center;
+}
+.fala2{
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    margin-right: -100px;
+}
+#conversa footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    background: #5A0505;
+}
+#conversa footer input{
+ width: 380px;
+ margin: 10px;
+ height: 30px;
+ margin-bottom: 10px;
+ border-radius: 10px;
+ border: none;
+}
+#conversa footer img{
+    width: 30px;
+    height: 30px;
+}
+#anexo{
+    margin-left: -50px;
+    margin-top: 10px;
+}
+#anexo:hover{
+    background-color: #8F0606;
+    border-radius: 30px;
+}
+#envia_mensagem{
+    margin: 10px;
+    margin-left:20px
 }
