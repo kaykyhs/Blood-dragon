@@ -1,0 +1,176 @@
+body {
+    background-image: linear-gradient(to top, black, red);
+    height: 1000px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+body::-webkit-scrollbar {
+    background-color: rgb(122, 0, 0);
+    box-shadow: inset 0 0 7px black;
+    width: 10px;
+    height: 0px;
+ }
+ body::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: rgba(37, 14, 14, 0.575);
+    box-shadow: inset 0 0 8px black;
+ }
+aside {
+    float: inline-start;
+    position: fixed;
+    height: 100%;
+    width: 60px;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: rgba(255, 0, 0, 0.274);
+    border-radius: 8px;
+}
+
+aside li {
+    list-style: none;
+}
+
+aside img {
+    padding-bottom: 30px;
+    margin-left: -30px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+aside img:hover {
+    border-radius: 10px;
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+header {
+    margin: 40px;
+    float: top;
+    position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+header input {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    float: top;
+    border-radius: 20px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+#lupa {
+    margin-left: -40px;
+}
+
+#lupa:hover {
+    cursor: pointer;
+}
+
+#notificaçao {
+    width: 30px;
+    height: 30px;
+    justify-content: flex-end;
+}
+
+#Nmensagens {
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    margin-left: -10px;
+    margin-top: -40px;
+    border-radius: 40px;
+    background-color: green;
+    text-align: center;
+}
+
+#Nmensagens p {
+    margin-top: 0px;
+}
+
+/*ideias*/
+#scrl{
+    display: flex;
+    overflow: scroll;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 5%;
+    width: 90%;
+    height: 700px;
+    background-color: rgba(37, 14, 14, 0.575);
+    border: solid 5px rgb(138, 138, 138);
+    border-radius: 5px;
+ }
+ #scrl::-webkit-scrollbar {
+    background-color: rgb(122, 0, 0);
+    box-shadow: inset 0 0 7px black;
+    width: 10px;
+    height: 0px;
+ }
+ #scrl::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: rgba(37, 14, 14, 0.575);
+    box-shadow: inset 0 0 8px black;
+ }
+ #filter{
+    background-color: black;
+    width: 33mm;
+    height: 10mm;
+    color: white;
+    font-size: 23px;
+    display: grid;
+    border-radius: 15px;
+    margin-left: 9%;
+    bottom: 40px;
+ }
+ #filter img{
+    width: 9mm;
+    margin-top: -50px;
+    margin-left: 75px;
+ }
+ #filter p{
+    margin-left: 15px;
+    margin-top: 5px;
+ }
+ #scrl .posts{
+    height: 40mm;
+    flex-basis: 1;
+    margin: 0.5%;
+    background-color: rgba(0, 0, 0, 0.087);
+    border-radius: 15px;
+    border: 2px solid black;
+ }
+ #scrl .posts .imagen{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+ }
+ .posts .perfil{
+    height: 8mm;
+    width: 8mm;
+    display:flex;
+    margin-top: -40px;
+    filter: drop-shadow( 0 0 10px white);
+ }
+ .posts p{
+    color:rgb(0, 0, 0);
+    text-shadow: 0 0 10px white;
+    margin-top: -27px;
+    margin-left: 44px;
+ }
+ .posts a{
+    text-decoration: none;
+    color: black;
+ }
