@@ -436,6 +436,7 @@ header img {
     border-radius: 30px;
     padding: 10px;
     font-size: 18px;
+    cursor: pointer;
 }
 .chat img{
     margin: 20px;
