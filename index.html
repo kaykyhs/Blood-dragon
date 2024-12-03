@@ -1,54 +1,171 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blood Dragon</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="tinta.js"></script>
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="inicial.css">
+    <script src="./Login/tinta.js"></script>
 </head>
 
 <body>
-    <nav>
+    <aside>
         <ul>
-            <li><img id="dragon_logo" src="./img/logo_dragao.png"></li>
-            <li><button class="perfil" id="tatuador" onclick="Sou_tatuador()">Sou Tatuador</button></li>
-            <li><button class="perfil" id="supply" onclick="sou_supply()">Sou Supply</button></li>
-            <li><button class="perfil" id="cliente" onclick=" sou_cliente()">Sou Cliente</button></li>
-            <div id="links">
-                <li><a href="#busines">Bussines</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-            </div>
+            <li><a href="/index.html"><img src="/icons_navbar/inicial.png"></a></li>
+            <li><a href="Pesquisa.html"><img src="/icons_navbar/pesquisar.png"></a></li>
+            <li><a href="/ideas/index.html"><img src="/icons_navbar/ideias.png"></a></li>
+            <li><a href="/calendario/index.html"><img src="/icons_navbar/calendario.png"></a></li>
+            <li><a href="Perfil.html"><img src="/icons_navbar/perfil.png"></a></li>
         </ul>
-    </nav>
-    <div id="formularios">
-    <form id="loguin">
-        <input class="loguin_normal" type="text" placeholder="Email">
-        <input class="loguin_normal" type="password" placeholder="Senha">
-        <a href="#">esqueceu a senha?</a>
-        <div id="loguins_externos">
-            <input type="image" src="./img/facebook.png">
-            <input type="image" src="./img/google.png">
+    </aside>
+    <header>
+        <input type="text" id="pesquisa" placeholder="Pesquisar... ">
+        <img id="lupa" src="./img/pesquisar.png" id="lupa" onclick="pesquisar()">
+        <img id="notificacao" src="./img/notificaçao.png" id="calendario" onclick="ativa_notifica()">
+        <div id="Nmensagens">
+            <p>1</p>
+
         </div>
-        <button type="submit">Loguin</button>
-    </form>
-    <form id="cadastro">
-        <input class="cadastro_normal" type="text" placeholder="Nome" required>
-        <input class="cadastro_normal" type="email" placeholder="Email" required>
-        <input class="cadastro_normal" type="number" placeholder="telefone">
-        <input class="cadastro_normal" type="password" placeholder="senha" required>
-        <input class="cadastro_normal" type="password" placeholder="confime sua senha " required>
-        <input id="identificador" class="cadastro_normal" type="number" placeholder="MEI (se possuir)">
-        <button type="submit">cadastre-se</button>
+        <img id="chat" src="./img/enviar.png" id="sair" onclick="mensagens()">
+        <div id="Nmensagens">
+            <p>1</p>
+        </div>
+    </header>
+    <div id="notifica">
+        <header>
+            <img src="/img/voltar_colorido.png" alt="botao_volta" onclick=" fecha_notifica()">
+            <span>Minhas notificaçoes</span>
+        </header>
+        <div class="dia_notificado">
+            <p>Hoje</p>
+        </div>
+        <div class="notificacao">
+            <img src="/img/alerta_agendamento.png" alt="imagem_alerta">
+            <p>Agendamento para o dia 20/05/2021 realizado com sucessso</p>
 
-    </form>
-</div>
+        </div>
+    </div>
+    <div id="side_papo">
+        <div id="bate_papo">
+            <header>
+                <img id="fechar" src="/img/voltar_colorido.png" onclick="fecha_papo()" alt="botao_volta">
+                <span>Chat</span>
+            </header>
+            <div class="chat" onclick="conversar()">
+                <img src="/img/6-dicas-para-se-tornar-um-tatuador-de-sucesso.jpg" alt="imagem_alerta">
+                <p class="mensagem_nao_Lida">pode me passar mais detalher prf?</p>
+
+            </div>
+            <div class="chat" onclick="conversar()">
+                <img src="/img/tatuador.jfif" alt="imagem_alerta">
+                <p class="mensagem_lida">Agendamento para o dia 20/05/2021 realizado com sucessso</p>
+
+            </div>
+        </div>
+        <div id="conversa">
+            <header>
+                <img id="fechar" src="/img/voltar_colorido.png" onclick="fecha_conversa()" alt="botao_volta">
+                <img class="conversante" src="./img/6-dicas-para-se-tornar-um-tatuador-de-sucesso.jpg">
+                <span> nome do conversante</span>
+            </header>
+            <div id="mensagens">
+                <div class="fala1">
+                    <p>isto e uma mensagem</p>
+                </div>
+                <div class="fala2">
+                    <p>isto e uma mensagem</p>
+                </div>
+            </div>
+            <footer>
+                <input type="text" placeholder="digite sua mensagem aki...">
+                <img id="anexo" src="./img/clip.png">
+                <img id="envia_mensagem" src="./img/enviar.png">
+            </footer>
+        </div>
+    </div>
+    <div id="status">
+        <ul>
+            <li>
+                <img src="./img/image.png">
+                <p>tatuador(1)</p>
+            </li>
+
+            <li>
+                <img src="./img/image (1).png">
+                <p>tatuador(2)</p>
+            </li>
+
+            <li>
+                <img src="./img/image (2).png">
+                <p>tatuador(3)</p>
+            </li>
+            <li>
+                <img src="./img/image (3).png">
+                <p>tatuador(4)</p>
+            </li>
+            <li>
+                <img src="./img/image (4).png">
+                <p>tatuador(5)</p>
+            </li>
+            <li>
+                <img src="./img/image (5).png">
+                <p>tatuador(6)</p>
+            </li>
+        </ul>
+    </div>
+    <div class="carrossel">
+        <li>
+            <input type="radio" id="slide1" name="slide" checked>
+            <label for="slide1"></label>
+            <img src="/img/bannerTatto.png" alt="magem1">
+        </li>
+
+        <li>
+            <input type="radio" id="slide2" name="slide" checked>
+            <label for="slide2"></label>
+            <img src="/img/banner2.avif" alt="imagem2">
+        </li>
+
+        <li>
+            <input type="radio" id="slide3" name="slide" checked>
+            <label for="slide3"></label>
+            <img src="/img/banner3.jpg" alt="imagem3">
+        </li>
 
 
-
-
+    </div>
+    <div class="post">
+        <div class="informativo">
+            <img class="perfil_post" src="/img/6-dicas-para-se-tornar-um-tatuador-de-sucesso.jpg" alt="perfil_post1">
+            <h2>tatuador4</h1>
+        </div>
+        <div class="conteudo">
+            <p class="descriçao"></p>abobrinha sobre tatuagem do cliente onde ele amaou e dps de alguns
+            dias vai reclamar</p>
+            <img src="/img/tatto_mao.jpg" alt="foto_post">
+        </div>
+        <div class="interaçoes">
+            <div class="curtir">
+                <img src="/img/caneta_vermelha.png" alt="curtir">
+                <p>50</p>
+            </div>
+            <div class="comentar">
+                <img src="/img/comentario.png" alt="comentario">
+                <p>10</p>
+            </div>
+        </div>
+    </div>
+    <div id="itens_arquivos">
+        <img src="./img/status.png">
+        <img src="./img/imagem.png">
+        <img src="./img/play.png">
+        <img src="./img/agulha.png">
+    </div>
+    </div>
+    <div class="entrada">
+        <button onclick="Gira_gira(this)" id="arquivos">+</button>
+    </div>
 
 </body>
 
