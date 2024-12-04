@@ -497,14 +497,19 @@ header img {
     bottom: 0px;
     display: flex;
     background: #5A0505;
+    height: 70px;
 }
 #conversa footer input{
- width: 380px;
+ width: 300px;
  margin: 10px;
  height: 30px;
  margin-bottom: 10px;
  border-radius: 10px;
  border: none;
+
+}
+#conversa footer button{
+    margin-left: 340px;
 }
 #conversa footer img{
     width: 30px;
@@ -521,4 +526,53 @@ header img {
 #envia_mensagem{
     margin: 10px;
     margin-left:20px
+}
+
+#chat-box {
+    height: 650px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-size: cover;
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #ececec;
+}
+
+#user-input {
+    width: calc(100% - 100px);
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 2px;
+}
+#send-button {
+    border-radius: 5px;
+    width: 50px;
+    height: 35px;
+    border: none;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+    bottom: 2px;
+   
 }

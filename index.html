@@ -69,18 +69,14 @@
                 <img class="conversante" src="./img/6-dicas-para-se-tornar-um-tatuador-de-sucesso.jpg">
                 <span> nome do conversante</span>
             </header>
-            <div id="mensagens">
-                <div class="fala1">
-                    <p>isto e uma mensagem</p>
+            '<div id="chat-container">
+                <div id="chat-box">
+                    <div id="messages"></div>
                 </div>
-                <div class="fala2">
-                    <p>isto e uma mensagem</p>
-                </div>
-            </div>
+            </div>'
             <footer>
-                <input type="text" placeholder="digite sua mensagem aki...">
-                <img id="anexo" src="./img/clip.png">
-                <img id="envia_mensagem" src="./img/enviar.png">
+                <input type="text" id="user-input" placeholder="Digite sua mensagem...">
+                <button id="send-button">Enviar</button>
             </footer>
         </div>
     </div>
@@ -166,7 +162,7 @@
     <div class="entrada">
         <button onclick="Gira_gira(this)" id="arquivos">+</button>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
