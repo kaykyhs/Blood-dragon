@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria de Imagens</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        #categories {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .category-btn {
+            padding: 10px 15px;
+            background-color: #e0e0e0;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .category-btn.active {
+            background-color: black;
+            color: white;
+        }
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .image-item {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            display: none;
+        }
+        .image-item.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="categories">
+        <button class="category-btn" data-category="natureza">Natureza</button>
+        <button class="category-btn" data-category="cidade">Cidade</button>
+        <button class="category-btn" data-category="animais">Animais</button>
+        <button class="category-btn" data-category="comida">Comida</button>
+        <button class="category-btn" data-category="tecnologia">Tecnologia</button>
+        <button class="category-btn" data-category="esportes">Esportes</button>
+        <button class="category-btn" data-category="viagem">Viagem</button>
+        <button class="category-btn" data-category="musica">Música</button>
+        <button class="category-btn" data-category="arte">Arte</button>
+        <button class="category-btn" data-category="arquitetura">Arquitetura</button>
+    </div>
+
+    <div id="gallery">
+        <img src="https://picsum.photos/200" class="image-item" data-category="natureza">
+        <img src="https://picsum.photos/200" class="image-item" data-category="natureza">
+        <img src="https://picsum.photos/100" class="image-item" data-category="cidade">
+        <img src="https://picsum.photos/100" class="image-item" data-category="cidade">
+        <img src="https://picsum.photos/300" class="image-item" data-category="animais">
+        <img src="https://picsum.photos/300" class="image-item" data-category="animais">
+        <img src="https://picsum.photos/400" class="image-item" data-category="comida">
+        <img src="https://picsum.photos/400" class="image-item" data-category="comida">
+        <img src="https://picsum.photos/600" class="image-item" data-category="tecnologia">
+        <img src="https://picsum.photos/600" class="image-item" data-category="tecnologia">
+        <img src="https://picsum.photos/800" class="image-item" data-category="esportes">
+        <img src="https://picsum.photos/800" class="image-item" data-category="esportes">
+        <img src="https://picsum.photos/500" class="image-item" data-category="viagem">
+        <img src="https://picsum.photos/500" class="image-item" data-category="viagem">
+        <img src="https://picsum.photos/400" class="image-item" data-category="musica">
+        <img src="https://picsum.photos/400" class="image-item" data-category="musica">
+        <img src="https://picsum.photos/400" class="image-item" data-category="arte">
+        <img src="https://picsum.photos/400" class="image-item" data-category="arte">
+        <img src="https://picsum.photos/400" class="image-item" data-category="arquitetura">
+        <img src="https://picsum.photos/400" class="image-item" data-category="arquitetura">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const images = document.querySelectorAll('.image-item');
+
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    button.classList.add('active');
+
+                    // Get selected category
+                    const selectedCategory = button.dataset.category;
+
+                    // Show/hide images based on category
+                    images.forEach(image => {
+                        if (image.dataset.category === selectedCategory) {
+                            image.classList.add('active');
+                        } else {
+                            image.classList.remove('active');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

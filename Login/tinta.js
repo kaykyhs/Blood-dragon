@@ -90,4 +90,9 @@ function fecha_conversa(){
     document.getElementById('conversa').style.display="none";
 
 }
+function filtro(f) {
+     if (document.getElementsByClassName(f)) {
+
+     }
+}
 
