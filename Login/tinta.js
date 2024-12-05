@@ -1,5 +1,5 @@
 
-
+var tatuador = true;
 var cliente = false;
 var supply = false;
 var arquivo =false;
@@ -7,38 +7,38 @@ var sininho = false;
 var balao = false;
 function sou_supply() {
     supply = true;
-    if (supply = true) {
+    tatuador = false;
+    cliente = false;
         document.getElementById("identificador").style = "display: block;";
         document.getElementById("identificador").placeholder = "CNPJ";
         document.getElementById("supply").style = "background-color: black; color: white;";
         document.getElementById("cliente").style = "background-color: #7556568F; color: white;";
         document.getElementById("tatuador").style = "background-color: #7556568F; color: white;";
-        document.body.style.backgroundImage = "url('./img/supplyBG.png')";
-    }
+        document.body.style.backgroundImage = "url('/img/supplyBG.png')";
+        console.log("sou supply");
 }
 function sou_cliente() {
     supply = false;
     cliente = true;
-    if (cliente = true) {
+    tatuador = false;
         document.getElementById("identificador").style = "display: none;";
         document.getElementById("supply").style = "background-color: #7556568F; color: white;";
+        document.getElementById("tatuador").style = "background-color: #7556568F; color: white;";
         document.getElementById("cliente").style = "background-color: black; color: white;";
-        document.body.style.backgroundImage = "url('./img/clienteBG.png')";
-    }
+        document.body.style.backgroundImage = "url('/img/clienteBG.png')";
+        console.log("sou cliente");
 }
 function Sou_tatuador(){
     supply = false;
     cliente = false;
-    if (cliente == false && supply == false) {
-        supply = false;
-        cliente = false;
+    tatuador = true;
         document.getElementById("identificador").style = "display: block;";
         document.getElementById("identificador").placeholder = "MEI(se possuir)";
         document.getElementById("tatuador").style = "background-color: black; color: white;";
         document.getElementById("cliente").style = "background-color: #7556568F; color: white;";
         document.getElementById("supply").style = "background-color: #7556568F; color: white;";
-        document.body.style.backgroundImage = "url('./img/imgTatto.PNG')";
-    }
+        document.body.style.backgroundImage = "url('/img/imgTatto.PNG')";
+        console.log("sou tatuador");
 }
 function criar_cadastro(){
     
@@ -93,38 +93,4 @@ function fecha_conversa(){
     document.getElementById('conversa').style.display="none";
 
 }
-function sou_supply() {
-    supply = true;
-    if (supply = true) {
-        document.getElementById("identificador").style = "display: block;";
-        document.getElementById("identificador").placeholder = "CNPJ";
-        document.getElementById("supply").style = "background-color: black; color: white;";
-        document.getElementById("cliente").style = "background-color: #7556568F; color: white;";
-        document.getElementById("tatuador").style = "background-color: #7556568F; color: white;";
-        document.body.style.backgroundImage = "url('/img/supplyBG.png')";
-    }
-}
-function sou_cliente() {
-    supply = false;
-    cliente = true;
-    if (cliente = true) {
-        document.getElementById("identificador").style = "display: none;";
-        document.getElementById("supply").style = "background-color: #7556568F; color: white;";
-        document.getElementById("cliente").style = "background-color: black; color: white;";
-        document.body.style.backgroundImage = "url('/img/clienteBG.png')";
-    }
-}
-function Sou_tatuador(){
-    supply = false;
-    cliente = false;
-    if (cliente == false && supply == false) {
-        supply = false;
-        cliente = false;
-        document.getElementById("identificador").style = "display: block;";
-        document.getElementById("identificador").placeholder = "MEI(se possuir)";
-        document.getElementById("tatuador").style = "background-color: black; color: white;";
-        document.getElementById("cliente").style = "background-color: #7556568F; color: white;";
-        document.getElementById("supply").style = "background-color: #7556568F; color: white;";
-        document.body.style.backgroundImage = "url('/img/imgTatto.PNG')";
-    }
-}
+

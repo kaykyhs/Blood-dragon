@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    display:block;
+    position: relative;
+    background:linear-gradient(red,black,silver) ;
+    color: white;
+   
+ }
+ .link_supply{
+    font-style:initial;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 15px;
+    color: silver;
+    border: 2px solid;
+    padding: 9px;
+    background-color: black;
+    cursor: pointer;
+}
+.parte_edit img{ 
+    width: 73%; 
+    height: auto;
+    border-radius: 20px;
+    box-shadow:  4px 5px red;
+}
+.parte_edit{
+    max-width: calc(25% - 30px);
+    margin: 1.5%;
+    padding: 1.5%;
+    border: 2px solid #ccc;
+    text-align: center;
+    border-radius: 25px;
+    transition: 0.7s;
+    background-color: black;
+}
+.parte_caixa{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    text-align: center;
+}
+.parte_caixa span{
+    display:block;
+    margin-top: -15px;
+}
+.parte_titulo{
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: -2%;
+}
+.botao_compra{
+    width: 120px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: green;
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+}
+.botao_carrinho{
+    width: 120px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+}
+.botoes{
+    display: flex; /* Coloca os elementos lado a lado */
+    gap: 5px; /* Espaçamento entre os botões */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    align-items: center; /* Alinha os botões verticalmente */
+    margin-top: 10px; /* Adiciona espaçamento acima */
+}
+#img-carrinho{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;  
+}
+#img-carrinho img{
+    width: 40px;
+    height:40px;
+}

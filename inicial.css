@@ -474,6 +474,7 @@ header img {
     border-radius: 30px;
     padding: 10px;
     font-size: 18px;
+    cursor: pointer;
 }
 .chat img{
     margin: 20px;
@@ -487,12 +488,15 @@ header img {
 }
 #conversa{
     display: none;
-    background-image: linear-gradient(to top, black, red);
-    height: 100%;
+    height: 460px;
+    overflow-y: scroll;
+    background-image: url(img_fundo.jpg);
+    background-size: cover;
+    
 }
 #conversa header{
     justify-content: left;
-    background: #5A0505;
+    background: black;
     width: 100%;
 }
 #fechar:hover{
@@ -533,15 +537,20 @@ header img {
     position: fixed;
     bottom: 0px;
     display: flex;
-    background: #5A0505;
+    background: #3C3D37;
+    height: 70px;
 }
 #conversa footer input{
- width: 380px;
+ width: 300px;
  margin: 10px;
  height: 30px;
  margin-bottom: 10px;
  border-radius: 10px;
  border: none;
+
+}
+#conversa footer button{
+    margin-left: 340px;
 }
 #conversa footer img{
     width: 30px;
@@ -558,4 +567,54 @@ header img {
 #envia_mensagem{
     margin: 10px;
     margin-left:20px
+}
+
+#chat-box {
+    height: 650px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-size: cover;
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-message {
+    align-self: flex-end;
+    background-color: #dcf8c6;
+}
+
+.bot-message {
+    align-self: flex-start;
+    background-color: #ececec;
+}
+
+#user-input {
+    width: calc(100% - 100px);
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 2px;
+}
+#send-button {
+    border-radius: 7px;
+    width: 80px;
+    height: 35px;
+    margin: 17px;
+    border: none;
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+    bottom: 2px;
+   
 }
