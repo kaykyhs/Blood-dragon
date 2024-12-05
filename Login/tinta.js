@@ -40,6 +40,9 @@ function Sou_tatuador(){
         document.body.style.backgroundImage = "url('/img/imgTatto.PNG')";
         console.log("sou tatuador");
 }
+function criar_cadastro(){
+    
+}
 function Gira_gira(el){
 el.classList.toggle('active');
  if(arquivo == false){
