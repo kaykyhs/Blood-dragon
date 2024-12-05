@@ -14,7 +14,7 @@ function sou_supply() {
         document.getElementById("supply").style = "background-color: black; color: white;";
         document.getElementById("cliente").style = "background-color: #7556568F; color: white;";
         document.getElementById("tatuador").style = "background-color: #7556568F; color: white;";
-        document.body.style.backgroundImage = "url('/img/supplyBG.png')";
+        document.body.style.backgroundImage = "url('/img/capa_5.png')";
         console.log("sou supply");
 }
 function sou_cliente() {
@@ -25,7 +25,7 @@ function sou_cliente() {
         document.getElementById("supply").style = "background-color: #7556568F; color: white;";
         document.getElementById("tatuador").style = "background-color: #7556568F; color: white;";
         document.getElementById("cliente").style = "background-color: black; color: white;";
-        document.body.style.backgroundImage = "url('/img/clienteBG.png')";
+        document.body.style.backgroundImage = "url('/img/capa_7.jpg')";
         console.log("sou cliente");
 }
 function Sou_tatuador(){
@@ -39,6 +39,9 @@ function Sou_tatuador(){
         document.getElementById("supply").style = "background-color: #7556568F; color: white;";
         document.body.style.backgroundImage = "url('/img/imgTatto.PNG')";
         console.log("sou tatuador");
+}
+function criar_cadastro(){
+    
 }
 function Gira_gira(el){
 el.classList.toggle('active');
