@@ -1,0 +1,192 @@
+
+body {
+    margin: 0;
+    display:block;
+    position: relative;
+    background: linear-gradient(red,black);
+    color: white;
+
+ }
+ #estilo_img{
+    text-align: center;
+    margin: 20px;
+}
+
+#estilo_img img {
+    width: 150px;
+    height: 150px;
+}
+
+h1 {
+    text-align: center; 
+    font-size: 25px;
+}
+#notificacao_img {
+    display: flex;
+    justify-content: end;
+    margin-right: 55px;
+    cursor: pointer;
+}
+#notificacao_img img{
+    position: absolute;
+    top: 0;
+    width: 25px;
+    height:25px;
+}
+#clickCount {
+    position: absolute;
+    top: 0;
+}
+#container {
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    filter: blur(4px);
+    background-position: 25% 20%;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 500px;
+    margin-left:10% ;
+    margin-top: 0%;
+}
+#corpo {
+    margin-top: -200px;
+    margin-left:15% ;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 70%;
+    z-index: 2;
+    height: 65px;
+    background-color: rgba(148, 145, 145, 0.651);
+    border: 2px solid silver;
+    border-radius: 20px;
+   
+}
+.botao_editar {
+    margin-left: auto;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.categorias{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    margin-left: auto;
+    padding: 30px;
+    margin: 35px;
+}
+h3 {
+    text-align: center;
+}
+
+.dentro_categorias{
+    padding: 2px 110px;
+    text-align: center;
+}
+
+.img_categorias{
+    transition: 0.7s; 
+    width: 130px; 
+    height: auto;
+}
+.img_categorias:hover{
+    transition: 0.7s; 
+    width: 150px; 
+    height: auto;
+}
+.parte_categorias {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 25px;
+   padding: 20px;
+}
+ .parte_tatto {
+    display: grid;
+    grid-template-columns:100px 100px 100px 100px;
+    grid-template-rows: 100px;
+    text-align: center;
+    margin-left: 22%;
+    gap: 180px;
+    
+ }
+  .img_tattos{
+    transition: 0.7s; 
+    width: 200px; 
+    height: auto;
+    margin: 22px;
+}
+.img_tattos:hover{
+    transition: 0.7s; 
+    width: 220px; 
+    height: auto;
+}
+
+
+aside {
+    float: inline-start;
+    position: fixed;
+    height: 100%;
+    width: 60px;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: rgba(255, 0, 0, 0.274);
+    border-radius: 8px;
+}
+
+aside li {
+    list-style: none;
+}
+
+aside img {
+    padding-bottom: 30px;
+    margin-left: -30px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+aside img:hover {
+    border-radius: 10px;
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.image-field {
+    width: 87px;
+    height: 87px;
+    transform: rotate(45deg);
+    border: 2px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.image-field img {
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+}
+
+.image-field span{
+    transform: rotate(-45deg);
+}
+
+.novo {
+    text-align: center;
+    margin-top: 50px;
+    
+}
+.banner_blur{
+    width: 1000px;
+    background-color: aqua;
+}
