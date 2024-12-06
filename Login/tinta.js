@@ -94,8 +94,6 @@ function fecha_conversa(){
 
 }
 function filtro(f) {
-     if (document.getElementsByClassName(f)) {
-
-     }
+    
 }
 
