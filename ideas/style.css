@@ -141,20 +141,18 @@ header img {
  #filter button{
     width: 80%;
     height: 9mm;
-    margin: 10%;
+    margin: 5%;
     border-radius: 15px;
     cursor: pointer;
     transition: 200ms;
+    font-size: 50%;
+    
  }
  #filter button:hover{
     transform: scale(1.05);
  }
  #filter button.active{
     background-color: black;
- }
- #filter p{
-    margin-left: 15px;
-    margin-top: 5px;
  }
  #scrl .posts{
     height: 40mm;
@@ -163,6 +161,10 @@ header img {
     background-color: rgba(0, 0, 0, 0.087);
     border-radius: 15px;
     border: 2px solid black;
+ }
+ .posts:hover{
+    filter:brightness(1.1);
+    transform: scale(1.02);
  }
  #scrl .posts .imagen{
     width: 100%;
@@ -174,11 +176,13 @@ header img {
     width: 8mm;
     display:flex;
     margin-top: -40px;
+    margin-left: 3%;
     filter:drop-shadow( 0 0 10px white);
+    filter: drop-shadow(0 0 1px black);
  }
  .posts p{
-    color:rgb(0, 0, 0);
-    text-shadow: 0 0 10px white;
+    color:white;
+    text-shadow: 0 0 5px black;
     margin-top: -27px;
     margin-left: 44px;
  }
