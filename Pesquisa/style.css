@@ -1,0 +1,423 @@
+body {
+    background-image: linear-gradient(to top, black, red);
+}
+
+aside {
+    z-index: 10;
+    float: inline-start;
+    position: fixed;
+    height: 100%;
+    width: 60px;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: rgba(255, 0, 0, 0.274);
+    border-radius: 8px;
+}
+
+aside li {
+    list-style: none;
+}
+
+aside img {
+    padding-bottom: 30px;
+    margin-left: -30px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+
+aside img:hover {
+    border-radius: 10px;
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+header {
+    float: top;
+    height: 100px;
+    position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+}
+
+header input {
+    width: 400px;
+    padding: 10px;
+    border: none;
+    float: top;
+    border-radius: 20px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+#notifica{
+    
+    display: none;
+    float: inline-start;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 70px;
+    top: 0px;
+    height: 100%;
+    width: 300px;
+    background: linear-gradient(180deg, #AD0CAF 0%, #8F0606 63.91%);
+    color: white;
+    animation-name: slide_notifica;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes slide_notifica {
+    from {left: -400px;}
+    to {top: 0px;}
+  }
+@keyframes out_slide_notifica {
+    from {left: 0px;}
+    to {left: -400px;}
+}
+
+#notifica.ativo{
+    display: block;
+}
+
+#notifica header {
+    text-align: center;
+    background: #5A0505;
+    height: 60px;
+    width: 100%;
+}
+
+#notifica header img {
+    margin-left: 2px;
+
+}
+
+.dia_notificado p {
+    margin: 10px;
+}
+
+.dia_notificado {
+    margin-left:100px ;
+    border-bottom: 1px solid black;
+    height: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    position: center;
+    justify-content: center;
+    width: 100px;
+    border-radius: 30px;
+    background-color: #8F0606;
+}
+
+.notificacao{
+    display: flex;
+    background-color: #5A0505;
+    border-radius: 40px;
+    width: 270px;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    padding: 5px;
+    margin: 10px;  
+}
+.notificacao img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: yellow;
+}
+
+#side_papo{    
+    z-index: 1;
+    position: fixed;
+    width: 440px;
+    height: 100%;
+    animation-name: out_slide_papo;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide_papo {
+    from {right: -440px;}
+    to {right: 0px;}
+  }
+  @keyframes out_slide_papo {
+    from {right: 0px;}
+    to {right: -440px;}
+  }
+
+  #bate_papo{
+
+    float: inline-start;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-image: linear-gradient(to top, black, red);
+    height: 100%;
+    width: 440px;
+}
+#bate_papo header{
+    text-align: left;
+    background: #5A0505;
+    height: 60px;
+    width: 100%;
+}
+#bate_papo header img{
+    margin-left: -330px;
+}
+
+#fechar:hover{
+    background-color: black;
+}
+
+.chat{
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 370px;
+    margin: 20px;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 18px;
+}
+.chat img{
+    margin: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.mensagem_lida{
+    opacity: 50%;
+    margin-top: 30px;
+}
+
+#conversa{
+    display: none;
+    background-image: linear-gradient(to top, black, red);
+    height: 100%;
+}
+#conversa header{
+    justify-content: left;
+    background: #5A0505;
+    width: 100%;
+}
+
+#conversa header img{
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+#conversa footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    background: #5A0505;
+}
+#conversa footer input{
+ width: 380px;
+ margin: 10px;
+ height: 30px;
+ margin-bottom: 10px;
+ border-radius: 10px;
+ border: none;
+}
+#conversa footer img{
+    width: 30px;
+    height: 30px;
+}
+
+#mensagens{
+    height: 440px;
+    width: 100%;
+    display: table;
+}
+
+.fala1{
+    border-radius: 20px;
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    margin-left: 130px;
+    text-align: center;
+}
+
+.fala2{
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    width: 300px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    margin-right: -100px;
+}
+
+#conversa footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    background: #5A0505;
+}
+#conversa footer input{
+ width: 380px;
+ margin: 10px;
+ height: 30px;
+ margin-bottom: 10px;
+ border-radius: 10px;
+ border: none;
+}
+#conversa footer img{
+    width: 30px;
+    height: 30px;
+}
+
+#anexo{
+    margin-left: -50px;
+    margin-top: 10px;
+}
+#anexo:hover{
+    background-color: #8F0606;
+    border-radius: 30px;
+}
+
+#envia_mensagem{
+    margin: 10px;
+    margin-left:20px
+}
+
+.post {
+    width: 600px;
+    height: 800px;
+    background-color: black;
+    color: white;
+    margin-left: 500px;
+    margin-top: 150px;
+    border-radius: 40px;
+    font-size: 18px;
+}
+
+.informativo {
+    display: flex;
+}
+
+.perfil_post {
+    border-radius: 300px;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+}
+
+.conteudo {
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    margin: 20px;
+}
+
+.conteudo img {
+    width: auto;
+    height: 500px;
+    margin-left: 140px;
+}
+
+.interaçoes {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.curtir {
+    display: flex;
+}
+
+.curtir img {
+    height: 40px;
+}
+
+.comentar {
+    display: flex;
+    margin-left: 10px;
+}
+
+.comentar img {
+    height: 30px;
+}
+
+#itens_arquivos{
+    display: none;
+    background-color: black;
+    position:fixed;
+    right:37px;
+    bottom:50px;
+    height: 320px;
+    width: 65px;
+    border-radius: 40px;
+    animation-name: abri_arquivos;
+    animation-duration: 1.6s;
+    animation-fill-mode: forwards;
+}
+@keyframes abri_arquivos{
+    from{height: 0;}
+    to{ height: 200;}
+}
+#itens_arquivos img{
+    padding: 2px;
+    width: 60px;
+    height: 60px;
+    animation-name: abri_arquivos;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    
+}
+#itens_arquivos img:hover{
+    background-color: rgb(99, 2, 99);
+    border-radius: 30px;
+    
+}
+
+.entrada {
+    color: white;
+    font-size: 50px;
+    float: inline-end;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+.entrada button.active{
+    transform: rotate(-180deg);
+    transition: transform 0.5s;
+}
+
+.entrada button {
+    border: none;
+    height: 60px;
+    width: 60px;
+    background-color: pink;
+    color: white;
+    font-size: 50px;
+    border-radius: 60px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+}
