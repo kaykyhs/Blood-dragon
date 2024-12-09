@@ -178,7 +178,6 @@ header img {
     margin-top: -40px;
     margin-left: 3%;
     filter:drop-shadow( 0 0 10px white);
-    filter: drop-shadow(0 0 1px black);
  }
  .posts p{
     color:white;
