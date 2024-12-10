@@ -93,7 +93,36 @@ function fecha_conversa(){
     document.getElementById('conversa').style.display="none";
 
 }
-function filtro(f) {
-    
-}
+
+function BT() {
+        document.getElementById('filter_buttons').style.display="none";
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const images = document.querySelectorAll('.posts');
+
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            button.classList.add('active');
+
+            // Get selected category
+            const selectedCategory = button.dataset.category;
+
+            // Show/hide images based on category
+            images.forEach(image => {
+                if (image.dataset.category === selectedCategory) {
+                    image.classList.add('on');
+                } else {
+                    image.classList.remove('on');
+                    image.classList.add('off');
+                }
+            });
+        });
+    });
+});
 
